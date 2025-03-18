@@ -5,7 +5,7 @@ import FinalShow from "../components/FinalShow";
 export default function Home() {
     const [stage, setStage] = useState(0);
 
-    const audioRef = useRef(new Audio("./src/assets/Baar Baar.mp3"));
+    const audioRef = useRef(new Audio("/assets/Baar Baar.mp3"));
 
     return (
         (stage < 4 && <div className='flex flex-col items-center justify-center bg-[#c6daec]'>
@@ -15,7 +15,7 @@ export default function Home() {
             {stage == 1 && <div className="font-emblema text-2xl">There's more to come</div>}
         </div>
         
-        <Card base={"./src/assets/her/" + ((stage == 0 && "welcome.jpg") || (stage == 1 && "cake.jpg") || (stage == 2 && "cap2.jpg") || (stage == 3 && "eat.jpg"))} cake={"./src/assets/cake.png"} slice={"./src/assets/slice.png"} cap={"./src/assets/cap.png"} stage={stage}/>
+        <Card base={"/assets/her/" + ((stage == 0 && "welcome.jpg") || (stage == 1 && "cake.jpg") || (stage == 2 && "cap2.jpg") || (stage == 3 && "eat.jpg"))} cake={"/assets/cake.png"} slice={"/assets/slice.png"} cap={"/assets/cap.png"} stage={stage}/>
 
         <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={() => {
             setStage(x => x + 1)
