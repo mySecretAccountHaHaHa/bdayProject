@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Emblema+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-emblema: "Emblema One", sans-serif; 
+    --font-josefine: "Josefine Sans", sans-serif;
+    --font-delius: "Delius", "cursive";
+}
