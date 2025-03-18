@@ -5,7 +5,7 @@ import FinalShow from "../components/FinalShow";
 export default function Home() {
     const [stage, setStage] = useState(0);
 
-    const audioRef = useRef(new Audio("./src/assets/Mohammed_Rafi,_Laxmikant_Pyarelal_Baar_Baar_Din_Ye_Aaye_Happy-[AudioTrimmer.com].mp3"));
+    const audioRef = useRef(new Audio("./src/assets/Baar Baar.mp3"));
 
     return (
         (stage < 4 && <div className='flex flex-col items-center justify-center bg-[#c6daec]'>

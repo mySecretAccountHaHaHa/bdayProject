@@ -4,7 +4,7 @@ import WrongTime from './pages/WrongTime';
 
 function App() {
   const today = new Date();
-  const display = today.getDate() == 18 && today.getMonth() == 2;
+  const display = today.getDate() == 19 && today.getMonth() == 2;
 
   return (
     <>
